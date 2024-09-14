@@ -1,0 +1,317 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1vw; /* Reduced base font size */
+    font-family: "PexicoMicro-Regular", Arial, sans-serif;
+    background-color: #002936;
+    background-image: radial-gradient(#E85D75 2px, transparent 0);
+    background-size: 60px 60px;
+    background-position: 0px 0px;
+    overflow: hidden; /* Prevent scrollbars on the body */
+}
+  
+.homepage {
+    position: fixed;
+    display: flex;
+
+    top: 0;    /* Aligns the element to the top of the viewport */
+    left: 0;   /* Aligns the element to the left of the viewport */
+    margin-top: 2.5vw;
+    margin-left: 2vw;
+    /*Copyright - 2024 levxyca (Leticia 'levxyca') */
+    font-size: 1rem;
+    color: #c5d7ed7a;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #c5d7ed7a;
+    background: #002936;
+    box-shadow: 3px 3px #c5d7ed7a;
+    cursor: pointer;
+
+  }
+
+.homepage:active{
+    box-shadow: none;
+    transform: translate(3px, 3px);
+
+}
+
+  
+
+.container {
+    overflow: hidden; /* Prevent overflow within the container */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Reduced max width */
+    padding: 2.5vw;
+    box-sizing: border-box;
+    gap: 2vw; /* Add gap between .intro and .buttons */
+}
+
+.intro {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    padding-bottom: 1vw;
+    text-align: left; /* Ensure alignment fits text */
+}
+
+.intro h1 {
+    font-size: 3.5vw; /* Reduced heading font size */
+    margin: 0.6vw 0 1vw 0; /* Adjusted top margin to move the text up */
+    color: #C5D7ED;
+    white-space: nowrap; /* Prevent text wrapping */
+    background-color: #002936; /* Background color of the text */
+}
+
+.intro pre {
+    display: block; /* Ensure the pre elements are block-level */
+    font-size: 1vw; /* Adjusted paragraph font size */
+    color: #C5D7ED;
+    background-color: #002936; /* Background color of the text */
+    white-space: nowrap; /* Prevent text wrapping */
+    margin: 0;
+    margin-left: -5px;
+}
+
+
+
+
+
+/* Copyright - 2024 ardianhu (ardianhu) (EDITED) */
+.terminal {
+    
+    font-family: monospace;
+    overflow: hidden; /* Prevent overflow within the container */
+
+    color: #C5D7ED; /* Set a default text color */
+}
+
+.terminal-header {
+    background-color: #3f3f46;
+    color: white;
+    padding: 8px;
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    margin-left: 12px;
+    height: 0.6vw;
+    width: 0.6vw;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.title {
+    margin-left: 8px;
+    margin-bottom: 4px;
+}
+
+.output {
+    padding-left: 16px;
+    padding-top: 8px;
+    background-color: #111827;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+
+.input-container {
+    display: flex;
+    padding-left: 16px;
+    background-color: #111827;
+    padding-bottom: 16px;
+    border-radius: 0 0 12px 12px;
+    align-items: center;
+}
+
+.terminal-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: #fbbf24;
+    width: 100%;
+    font-size: 1.2vw;
+}
+
+
+.red {
+    background-color: #f87171;
+}
+
+.yellow {
+    background-color: #facc15;
+}
+
+.green {
+    background-color: #4ade80;
+}
+
+
+.gray-text {
+    color: #6b7280;
+}
+
+.blue-text {
+    color: #38bdf8;
+}
+
+
+.green-text {
+    color: #4ade80;
+}
+
+.blue-text {
+    color: #38bdf8;
+    margin-left: 8px;
+}
+
+.yellow-text {
+    color: #fbbf24;
+}
+
+
+@media (orientation: portrait) {
+  
+
+    body {
+        font-size: 5vw; /* Increase base font size for better readability on small screens */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Make sure the body content stacks vertically */
+    }
+
+    .container {
+        flex-direction: column; /* Stack text on top of buttons */
+        align-items: center;
+        width: 90%; /* Reduced to 90% of the screen width */
+        padding: 0; /* Remove extra padding */
+        box-sizing: border-box;
+        margin: 0 auto; /* Center the container horizontally */
+    }
+
+    .intro {
+        width: 90%; /* Make intro 90% of the screen width */
+        margin-bottom: 3vw; /* Add margin below the intro section */
+        text-align: center; /* Center the text */
+        align-items: center;
+    }
+
+    .intro h1 {
+        font-size: 9vw; /* Adjust heading font size */
+        text-align: center; /* Center the text */
+        margin: 0 auto; /* Center the h1 within the container */
+    }
+
+    .intro pre {
+        font-size: 6vw; /* Adjust paragraph font size */
+        text-align: center; /* Center the text */
+        margin: 0 auto; /* Center the pre element */
+        
+        white-space: normal; /* Allow text wrapping inside pre tags */
+        word-wrap: break-word; /* Ensure long words break to avoid overflow */
+    }
+
+    .terminal {
+        min-width: 90%; /* Make terminal 90% of the screen width */
+        min-height: 40vh; /* Adjust height for portrait mode */
+        margin: 0 auto; /* Center the terminal */
+    }
+
+    .input-container {
+        font-size: 4vw; /* Increase input font size in portrait mode */
+        margin: 0 auto; /* Center the input container */
+    }
+
+    .terminal-input {
+        font-size: 4vw; /* Increase font size of the input field */
+    }
+
+    .dot {
+        margin-left: 12px;
+        height: 1.2vw;
+        width: 1.2vw;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .homepage {
+        margin-top: 4vw;
+        margin-left: 4vw;
+        font-size: 3vw;
+        position: absolute;
+    }
+}
+
+
+.example-2 {
+    position: fixed;            /* Fixes the position relative to the viewport */
+    bottom: 40px;               /* Distance from the bottom of the screen */
+    left: 50px;                 /* Distance from the left of the screen */
+    display: flex;              /* Enable flexbox layout */
+    flex-direction: row;        /* Arrange icons in a horizontal row */
+    gap: 20px;                  /* Space between the icons */
+    list-style-type: none;      /* Remove bullet points */
+    padding: 0;                 /* Remove padding */
+    margin: 0;                  /* Remove margin */
+    z-index: 1000;              /* Ensure it stays above other elements */
+}
+
+.icon-content {
+    position: relative; /* Keep position relative for the tooltip */
+    width: 50px;        /* Adjust width as needed */
+    height: 50px;       /* Adjust height as needed */
+}
+
+.filled {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 60px;      /* Adjust the position above the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 12px;
+    pointer-events: none;
+}
+
+.icon-content:hover .tooltip {
+    opacity: 1;  /* Show tooltip on hover */
+}
+
+  

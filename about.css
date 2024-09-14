@@ -1,0 +1,339 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1vw; /* Reduced base font size */
+    font-family: "PexicoMicro-Regular", Arial, sans-serif;
+    background-color: #002936;
+    background-image: radial-gradient(#E85D75 2px, transparent 0);
+    background-size: 60px 60px;
+    background-position: 0px 0px
+}
+
+.homepage{
+    position: fixed;
+    display: flex;
+    top: 0;    /* Aligns the element to the top of the viewport */
+    left: 0;   /* Aligns the element to the left of the viewport */
+    margin-top: 2.5vw;
+    margin-left: 2vw;
+    /*Copyright - 2024 levxyca (Leticia 'levxyca') */
+    font-size: 1rem;
+    color: #c5d7ed7a;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #c5d7ed7a;
+    background: #002936;
+    box-shadow: 3px 3px #c5d7ed7a;
+    cursor: pointer;
+    text-decoration: none; /* Ensure no underline */
+}
+
+
+.homepage:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}
+.main-container {
+    width: 70%;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #002936; /* Matching the color scheme */
+    border-radius: 10px; /* Rounded corners */
+    color: #C5D7ED; /* Text color */
+    box-sizing: border-box;
+}
+
+.about-body { 
+    
+    margin: 0rem;
+    overflow:visible;
+    padding: 0;
+    height: 100%;
+    color: #C5D7ED;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Distribute space between elements */
+
+    overflow: hidden;
+}
+
+.ascii-about, .ascii-cow {
+    font-size: 1.5vw; /* Default font size */
+    padding: 1vh 0;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.ascii-cow{
+    position: absolute; /* Position it absolutely to the bottom */
+    bottom: 0; /* Align to the bottom of the container */
+}
+
+
+.info-container {
+    padding: 2rem; /* General padding around the section */
+    margin-bottom: 4rem; /* Space below the section */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center align text */
+}
+
+h2 {
+    margin-top: 5rem;
+    margin-bottom: 2rem; /* Increased space below the section title */
+    font-size: 2.5rem; /* Title font size */
+    font-weight: 600; /* Bold titles */
+    text-align: center;
+    text-decoration: underline #E85D75;
+}
+
+.education-details,
+.interests-details {
+    font-size: 1.5rem; /* Font size for the details */
+    font-weight: 400; /* Normal weight for items */
+    margin-top: 0.5rem; /* Decreased space between bullet points */
+    text-align: center; /* Center align text */
+    display: inline-block; /* Ensure the block is only as wide as its content */
+}
+
+.education-details span,
+.interests-details span {
+    display: block;
+    margin-top: 0.5rem; /* Decreased space between list items */
+    position: relative;
+}
+
+.education-section,
+.interests-section {
+    margin-bottom: 4rem; /* Space below each section */
+}
+
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 5rem;
+    text-align: left;
+}
+
+
+
+
+blockquote {
+    border-left: 5px solid;
+    border-color: #E85D75;
+    margin-left: 0;
+    padding: 1rem 0 1rem 1rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(
+      35deg,
+      #E85D75,
+      hsl(160, 100%, 65%)
+    );
+  }
+
+
+/* Additional style for paragraphs within the text-container */
+/* From Uiverse.io by gharsh11032000 */ 
+
+
+
+
+
+
+
+/* Adjust the cards layout to fit 3 or 4 in a row, centered */
+.cards, .certificates {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr)); /* Set 4 columns with minimum size */
+    gap: 20px; /* Space between the cards */
+    justify-items: center; /* Center the cards/certificates within each grid cell */
+    align-items: center;
+    width: 100%; /* Full width of the container */
+    max-width: 1200px; /* Limit max width */
+    margin: 0 auto; /* Center the grid itself */
+    padding: 0 20px;
+    box-sizing: border-box;
+    padding-bottom: 2rem;
+}
+
+.card__image, .certificate-button img {
+    max-width: 90%; /* Consistent image width */
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+
+/* Ensure the images in the card are centered */
+
+/* Card content should also be centered */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensure all card content (text, image) is centered */
+    justify-content: center;
+    text-align: center;
+}
+
+
+.skills-container p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 600; /* Bolder title */
+    text-align: center; /* Center-align title */
+    padding-bottom: 0.5rem;
+
+}
+
+.skills-container h2{
+    margin-top: -5rem;
+
+}
+
+.certification-container h2{
+    margin-top: 5rem;
+
+}
+
+
+
+
+.certificate-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+
+
+.card:hover .card__image, .certificate-button:hover img {
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+/* Shrinking icon sizes for smaller screens */
+.card__image, .certificate-button img {
+    max-width: 85%; /* Smaller image size for both */
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .card__image, .certificate-button img {
+        max-width: 75%; /* Further reduce image size for both */
+    }
+}
+
+/* Responsive layout adjustments for both cards and certificates */
+@media (max-width: 1200px) {
+    .certificates, .cards {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); /* Shrink columns */
+    }
+}
+
+@media (max-width: 900px) {
+    .certificates, .cards {
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); /* Shrink columns further */
+    }
+}
+
+@media (max-width: 600px) {
+    .certificates, .cards {
+        grid-template-columns: repeat(2, minmax(90px, 1fr)); /* Ensure there are always 2 per row with a min width of 90px */
+    }
+}
+
+
+
+@media (orientation: portrait) {
+    .ascii-about {
+        padding-top: 20vw;
+        font-size: 2vw; /* Increase size in portrait mode */
+    }
+
+    .ascii-cow {
+        padding-bottom: 10vw;
+        font-size: 3.5vw; /* Increase size in portrait mode */
+        margin-top: 1vh; /* Decrease space between ASCII art and cow */
+
+    }
+
+    .text-container {
+        font-size: 8vw; /* Adjust font size for portrait mode */
+        padding: 2vw; /* Adjust padding for portrait mode */
+    }
+
+    .text-container p {
+        font-size: 8vw; /* Adjust font size for portrait mode */
+    }
+
+    body {
+        font-size: 5vw; /* Increase base font size for better readability on small screens */
+    }
+
+    .info-container {
+        width: 90%; /* Increase the width to 90% for smaller screens */
+        padding: 1rem; /* Reduce padding for smaller screens */
+        font-size: 4vw; /* Adjust font size for readability */
+        line-height: 1.5; /* Adjust line height for better readability */
+    }
+
+    .info-container p {
+        font-size: 3vw; /* Adjust font size for paragraphs */
+    }
+
+    .info-container .education,
+    .info-container .interests {
+        font-size: 4vw; /* Adjust font size for headings */
+        margin-top: 1.5rem; /* Space above the headings */
+        margin-bottom: 0.5rem; /* Space below the headings */
+    }
+
+    .info-container .education span,
+    .info-container .interests span {
+        font-size: 3vw; /* Adjust font size for list items */
+    }
+
+    .info-container blockquote h1 {
+        font-size:7vw; /* Adjust font size for blockquote heading */
+
+    }
+
+    .h2 {
+        font-size: 2vw; /* Title font size */
+    }
+
+    .homepage {
+        position: sticky; /* Stick to the viewport top */
+        top: 0;
+        left: 0;
+  
+        font-size: 1rem; /* Adjust font size if needed */
+        z-index: 1000; /* Ensure it stays on top of other content */
+        text-decoration: none; /* Ensure no underline in portrait mode */
+    }   
+
+  
+}
+
