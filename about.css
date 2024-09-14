@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-size: 1vw; /* Reduced base font size */
+    font-size: 1vw; 
     font-family: "PexicoMicro-Regular", Arial, sans-serif;
     background-color: #002936;
     background-image: radial-gradient(#E85D75 2px, transparent 0);
@@ -17,8 +17,8 @@ body {
 .homepage{
     position: fixed;
     display: flex;
-    top: 0;    /* Aligns the element to the top of the viewport */
-    left: 0;   /* Aligns the element to the left of the viewport */
+    top: 0;   
+    left: 0;   
     margin-top: 2.5vw;
     margin-left: 2vw;
     /*Copyright - 2024 levxyca (Leticia 'levxyca') */
@@ -31,7 +31,7 @@ body {
     background: #002936;
     box-shadow: 3px 3px #c5d7ed7a;
     cursor: pointer;
-    text-decoration: none; /* Ensure no underline */
+    text-decoration: none; 
 }
 
 
@@ -43,9 +43,9 @@ body {
     width: 70%;
     margin: 2rem auto;
     padding: 1.5rem;
-    background-color: #002936; /* Matching the color scheme */
-    border-radius: 10px; /* Rounded corners */
-    color: #C5D7ED; /* Text color */
+    background-color: #002936; 
+    border-radius: 10px; 
+    color: #C5D7ED; 
     box-sizing: border-box;
 }
 
@@ -70,59 +70,59 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; /* Distribute space between elements */
+    justify-content: space-between; 
 
     overflow: hidden;
 }
 
 .ascii-about, .ascii-cow {
-    font-size: 1.5vw; /* Default font size */
+    font-size: 1.5vw; 
     padding: 1vh 0;
     overflow: hidden;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .ascii-cow{
-    position: absolute; /* Position it absolutely to the bottom */
-    bottom: 0; /* Align to the bottom of the container */
+    position: absolute; 
+    bottom: 0; 
 }
 
 
 .info-container {
-    padding: 2rem; /* General padding around the section */
-    margin-bottom: 4rem; /* Space below the section */
-    border-radius: 8px; /* Rounded corners */
-    text-align: center; /* Center align text */
+    padding: 2rem; 
+    margin-bottom: 4rem; 
+    border-radius: 8px; 
+    text-align: center; 
 }
 
 h2 {
     margin-top: 5rem;
-    margin-bottom: 2rem; /* Increased space below the section title */
-    font-size: 2.5rem; /* Title font size */
-    font-weight: 600; /* Bold titles */
+    margin-bottom: 2rem; 
+    font-size: 2.5rem;
+    font-weight: 600; 
     text-align: center;
     text-decoration: underline #E85D75;
 }
 
 .education-details,
 .interests-details {
-    font-size: 1.5rem; /* Font size for the details */
-    font-weight: 400; /* Normal weight for items */
-    margin-top: 0.5rem; /* Decreased space between bullet points */
-    text-align: center; /* Center align text */
-    display: inline-block; /* Ensure the block is only as wide as its content */
+    font-size: 1.5rem; 
+    font-weight: 400; 
+    margin-top: 0.5rem; 
+    text-align: center; 
+    display: inline-block; 
 }
 
 .education-details span,
 .interests-details span {
     display: block;
-    margin-top: 0.5rem; /* Decreased space between list items */
+    margin-top: 0.5rem; 
     position: relative;
 }
 
 .education-section,
 .interests-section {
-    margin-bottom: 4rem; /* Space below each section */
+    margin-bottom: 4rem; 
 }
 
 
@@ -151,46 +151,33 @@ blockquote {
   }
 
 
-/* Additional style for paragraphs within the text-container */
-/* From Uiverse.io by gharsh11032000 */ 
-
-
-
-
-
-
-
-/* Adjust the cards layout to fit 3 or 4 in a row, centered */
+/* Cards from Uiverse.io by gharsh11032000 */ 
 .cards, .certificates {
     display: grid;
-    grid-template-columns: repeat(4, minmax(150px, 1fr)); /* Set 4 columns with minimum size */
-    gap: 20px; /* Space between the cards */
-    justify-items: center; /* Center the cards/certificates within each grid cell */
+    grid-template-columns: repeat(4, minmax(150px, 1fr)); 
+    gap: 20px; 
+    justify-items: center; 
     align-items: center;
-    width: 100%; /* Full width of the container */
-    max-width: 1200px; /* Limit max width */
-    margin: 0 auto; /* Center the grid itself */
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
     padding: 0 20px;
     box-sizing: border-box;
     padding-bottom: 2rem;
 }
 
 .card__image, .certificate-button img {
-    max-width: 90%; /* Consistent image width */
+    max-width: 90%; 
     height: auto;
     margin: 0 auto;
     display: block;
     transition: transform 0.3s ease;
 }
 
-
-/* Ensure the images in the card are centered */
-
-/* Card content should also be centered */
 .card {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Ensure all card content (text, image) is centered */
+    align-items: center; 
     justify-content: center;
     text-align: center;
 }
@@ -200,8 +187,8 @@ blockquote {
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-size: 3rem;
-    font-weight: 600; /* Bolder title */
-    text-align: center; /* Center-align title */
+    font-weight: 600; 
+    text-align: center; 
     padding-bottom: 0.5rem;
 
 }
@@ -230,37 +217,35 @@ blockquote {
 
 
 .card:hover .card__image, .certificate-button:hover img {
-    transform: scale(1.1); /* Enlarge on hover */
+    transform: scale(1.1); 
 }
 
-/* Shrinking icon sizes for smaller screens */
 .card__image, .certificate-button img {
-    max-width: 85%; /* Smaller image size for both */
+    max-width: 85%; 
     height: auto;
 }
 
 @media (max-width: 600px) {
     .card__image, .certificate-button img {
-        max-width: 75%; /* Further reduce image size for both */
+        max-width: 75%; 
     }
 }
 
-/* Responsive layout adjustments for both cards and certificates */
 @media (max-width: 1200px) {
     .certificates, .cards {
-        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); /* Shrink columns */
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); 
     }
 }
 
 @media (max-width: 900px) {
     .certificates, .cards {
-        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); /* Shrink columns further */
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); 
     }
 }
 
 @media (max-width: 600px) {
     .certificates, .cards {
-        grid-template-columns: repeat(2, minmax(90px, 1fr)); /* Ensure there are always 2 per row with a min width of 90px */
+        grid-template-columns: repeat(2, minmax(90px, 1fr)); 
     }
 }
 
@@ -269,69 +254,69 @@ blockquote {
 @media (orientation: portrait) {
     .ascii-about {
         padding-top: 20vw;
-        font-size: 2vw; /* Increase size in portrait mode */
+        font-size: 2vw; 
     }
 
     .ascii-cow {
         padding-bottom: 10vw;
-        font-size: 3.5vw; /* Increase size in portrait mode */
-        margin-top: 1vh; /* Decrease space between ASCII art and cow */
+        font-size: 3.5vw; 
+        margin-top: 1vh; 
 
     }
 
     .text-container {
-        font-size: 8vw; /* Adjust font size for portrait mode */
-        padding: 2vw; /* Adjust padding for portrait mode */
+        font-size: 8vw; 
+        padding: 2vw; 
     }
 
     .text-container p {
-        font-size: 8vw; /* Adjust font size for portrait mode */
+        font-size: 8vw; 
     }
 
     body {
-        font-size: 5vw; /* Increase base font size for better readability on small screens */
+        font-size: 5vw; 
     }
 
     .info-container {
-        width: 90%; /* Increase the width to 90% for smaller screens */
-        padding: 1rem; /* Reduce padding for smaller screens */
-        font-size: 4vw; /* Adjust font size for readability */
-        line-height: 1.5; /* Adjust line height for better readability */
+        width: 90%; 
+        padding: 1rem; 
+        font-size: 4vw; 
+        line-height: 1.5; 
     }
 
     .info-container p {
-        font-size: 3vw; /* Adjust font size for paragraphs */
+        font-size: 3vw; 
     }
 
     .info-container .education,
     .info-container .interests {
-        font-size: 4vw; /* Adjust font size for headings */
-        margin-top: 1.5rem; /* Space above the headings */
-        margin-bottom: 0.5rem; /* Space below the headings */
+        font-size: 4vw; 
+        margin-top: 1.5rem; 
+        margin-bottom: 0.5rem; 
     }
 
     .info-container .education span,
     .info-container .interests span {
-        font-size: 3vw; /* Adjust font size for list items */
+        font-size: 3vw; 
     }
 
     .info-container blockquote h1 {
-        font-size:7vw; /* Adjust font size for blockquote heading */
+        font-size:7vw; 
 
     }
 
     .h2 {
-        font-size: 2vw; /* Title font size */
+        font-size: 2vw; 
     }
 
     .homepage {
-        position: sticky; /* Stick to the viewport top */
+        position: sticky; 
         top: 0;
         left: 0;
   
-        font-size: 1rem; /* Adjust font size if needed */
-        z-index: 1000; /* Ensure it stays on top of other content */
-        text-decoration: none; /* Ensure no underline in portrait mode */
+        font-size: 1rem; 
+        z-index: 1000;
+        text-decoration: none; 
     }   
 
   

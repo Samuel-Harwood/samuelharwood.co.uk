@@ -6,24 +6,23 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-size: 1vw; /* Reduced base font size */
+    font-size: 1vw; 
     font-family: "PexicoMicro-Regular", Arial, sans-serif;
     background-color: #002936;
     background-image: radial-gradient(#E85D75 2px, transparent 0);
     background-size: 60px 60px;
     background-position: 0px 0px;
-    overflow: hidden; /* Prevent scrollbars on the body */
+    overflow: hidden; 
 }
   
 .homepage {
     position: fixed;
     display: flex;
-
-    top: 0;    /* Aligns the element to the top of the viewport */
-    left: 0;   /* Aligns the element to the left of the viewport */
+    top: 0;   
+    left: 0;   
     margin-top: 2.5vw;
     margin-left: 2vw;
-    /*Copyright - 2024 levxyca (Leticia 'levxyca') */
+    /*2024 levxyca (Leticia 'levxyca') */
     font-size: 1rem;
     color: #c5d7ed7a;
     text-transform: uppercase;
@@ -45,15 +44,15 @@ body {
   
 
 .container {
-    overflow: hidden; /* Prevent overflow within the container */
+    overflow: hidden; 
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px; /* Reduced max width */
+    max-width: 1200px; 
     padding: 2.5vw;
     box-sizing: border-box;
-    gap: 2vw; /* Add gap between .intro and .buttons */
+    gap: 2vw; 
 }
 
 .intro {
@@ -63,23 +62,23 @@ body {
     justify-content: space-between;
     height: auto;
     padding-bottom: 1vw;
-    text-align: left; /* Ensure alignment fits text */
+    text-align: left; 
 }
 
 .intro h1 {
-    font-size: 3.5vw; /* Reduced heading font size */
-    margin: 0.6vw 0 1vw 0; /* Adjusted top margin to move the text up */
+    font-size: 3.5vw; 
+    margin: 0.6vw 0 1vw 0; 
     color: #C5D7ED;
-    white-space: nowrap; /* Prevent text wrapping */
-    background-color: #002936; /* Background color of the text */
+    white-space: nowrap; 
+    background-color: #002936; 
 }
 
 .intro pre {
-    display: block; /* Ensure the pre elements are block-level */
-    font-size: 1vw; /* Adjusted paragraph font size */
+    display: block; 
+    font-size: 1vw; 
     color: #C5D7ED;
-    background-color: #002936; /* Background color of the text */
-    white-space: nowrap; /* Prevent text wrapping */
+    background-color: #002936; 
+    white-space: nowrap; 
     margin: 0;
     margin-left: -5px;
 }
@@ -88,13 +87,12 @@ body {
 
 
 
-/* Copyright - 2024 ardianhu (ardianhu) (EDITED) */
+/*2024 ardianhu (ardianhu) (EDITED) */
 .terminal {
     
     font-family: monospace;
-    overflow: hidden; /* Prevent overflow within the container */
-
-    color: #C5D7ED; /* Set a default text color */
+    overflow: hidden; 
+    color: #C5D7ED; 
 }
 
 .terminal-header {
@@ -189,59 +187,59 @@ body {
   
 
     body {
-        font-size: 5vw; /* Increase base font size for better readability on small screens */
+        font-size: 5vw; 
         margin: 0;
         padding: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column; /* Make sure the body content stacks vertically */
+        flex-direction: column; 
     }
 
     .container {
-        flex-direction: column; /* Stack text on top of buttons */
+        flex-direction: column; 
         align-items: center;
-        width: 90%; /* Reduced to 90% of the screen width */
-        padding: 0; /* Remove extra padding */
+        width: 90%; 
+        padding: 0;
         box-sizing: border-box;
-        margin: 0 auto; /* Center the container horizontally */
+        margin: 0 auto; 
     }
 
     .intro {
-        width: 90%; /* Make intro 90% of the screen width */
-        margin-bottom: 3vw; /* Add margin below the intro section */
-        text-align: center; /* Center the text */
+        width: 90%; 
+        margin-bottom: 3vw; 
+        text-align: center; 
         align-items: center;
     }
 
     .intro h1 {
-        font-size: 9vw; /* Adjust heading font size */
-        text-align: center; /* Center the text */
-        margin: 0 auto; /* Center the h1 within the container */
+        font-size: 9vw; 
+        text-align: center; 
+        margin: 0 auto; 
     }
 
     .intro pre {
-        font-size: 6vw; /* Adjust paragraph font size */
-        text-align: center; /* Center the text */
-        margin: 0 auto; /* Center the pre element */
+        font-size: 6vw; 
+        text-align: center; 
+        margin: 0 auto; 
         
-        white-space: normal; /* Allow text wrapping inside pre tags */
-        word-wrap: break-word; /* Ensure long words break to avoid overflow */
+        white-space: normal; 
+        word-wrap: break-word;
     }
 
     .terminal {
-        min-width: 90%; /* Make terminal 90% of the screen width */
-        min-height: 40vh; /* Adjust height for portrait mode */
-        margin: 0 auto; /* Center the terminal */
+        min-width: 90%; 
+        min-height: 40vh; 
+        margin: 0 auto; 
     }
 
     .input-container {
-        font-size: 4vw; /* Increase input font size in portrait mode */
-        margin: 0 auto; /* Center the input container */
+        font-size: 4vw; 
+        margin: 0 auto; 
     }
 
     .terminal-input {
-        font-size: 4vw; /* Increase font size of the input field */
+        font-size: 4vw; 
     }
 
     .dot {
@@ -261,23 +259,24 @@ body {
 }
 
 
-.example-2 {
-    position: fixed;            /* Fixes the position relative to the viewport */
-    bottom: 40px;               /* Distance from the bottom of the screen */
-    left: 50px;                 /* Distance from the left of the screen */
-    display: flex;              /* Enable flexbox layout */
-    flex-direction: row;        /* Arrange icons in a horizontal row */
-    gap: 20px;                  /* Space between the icons */
-    list-style-type: none;      /* Remove bullet points */
-    padding: 0;                 /* Remove padding */
-    margin: 0;                  /* Remove margin */
-    z-index: 1000;              /* Ensure it stays above other elements */
+.icons {
+    position: fixed;            
+    bottom: 40px;              
+    left: 50px;                 
+    display: flex;             
+    flex-direction: row;        
+    gap: 20px;                
+    list-style-type: none;     
+    padding: 0;                
+    margin: 0;                  
+    z-index: 1000;              
 }
 
 .icon-content {
-    position: relative; /* Keep position relative for the tooltip */
-    width: 50px;        /* Adjust width as needed */
-    height: 50px;       /* Adjust height as needed */
+    position: relative; 
+    width: 50px;        
+    height: 50px;   
+    background-color: #002936;
 }
 
 .filled {
@@ -297,7 +296,7 @@ body {
 
 .tooltip {
     position: absolute;
-    bottom: 60px;      /* Adjust the position above the icon */
+    bottom: 60px;      
     left: 50%;
     transform: translateX(-50%);
     background-color: black;
@@ -311,7 +310,8 @@ body {
 }
 
 .icon-content:hover .tooltip {
-    opacity: 1;  /* Show tooltip on hover */
+    opacity: 1;  
 }
+
 
   
