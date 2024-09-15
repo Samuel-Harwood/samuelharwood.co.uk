@@ -15,21 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
           window.location.href = "about.html";
           break;
         case "2":
-   
-          newOutput.textContent = `Under Construction, come back later`;
-          output.appendChild(newOutput);
-          window.location.href = "#projects"; // Adjust this if you want a different behavior
+          window.location.href = "projects.html"; // Adjust this if you want a different behavior
 
           break;
         case "3":
-       
-          newOutput.textContent = `Under Construction, come back later`;
-          output.appendChild(newOutput);
-          window.location.href = "#cv"; // Adjust this if you want a different behavior
+          window.location.href = "cv.html"; // Adjust this if you want a different behavior
 
-          break;
-        case "4":
-          window.location.href = "timeline.html"; // Adjust this if you want a different behavior
           break;
         default:
 

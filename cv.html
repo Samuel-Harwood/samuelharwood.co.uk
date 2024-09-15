@@ -4,10 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Align items from the top */
+            align-items: center;
+            background-color: #002936;
+            background-image: radial-gradient(#E85D75 2px, transparent 0);
+            background-size: 60px 60px;
+            background-position: 0px 0px;
+            height: 100vh; /* Full viewport height */
+            overflow: hidden; /* Prevent scrollbars */
+        }
+        .header {
+            width: 100%;
+            text-align: center;
+            padding: 2rem 0 2rem 0; /* Padding around the heading */
+            box-sizing: border-box;
+            z-index: 1;
+        }
+        pre {
+            color: #C5D7ED;
+            font-size: calc(.65vw * 0.8); /* Font size relative to viewport width */
+            margin: 0;
+        }
+        .cv {
+            width: 60%; /* Make the container span full width */
+            height: calc(90vh - 4rem); /* Height of the container minus header's padding */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box; /* Ensure no overflow due to padding */
+        }
+        iframe {
+            width: 70%; /* Width of the PDF */
+            height: 100%; /* Ensure the iframe takes up all available height */
+            border: none; /* Remove border */
+        }
+ 
+        @media (orientation: portrait) {
+            .cv {
+                width: 100%; /* Adjust width for portrait mode */
+                height: auto; /* Let height adjust naturally */
+                padding: 2rem 0; /* Padding for spacing */
+            }
+            iframe {
+                width: 90%; /* Reduce the width in portrait mode */
+                min-height: 60vh; /* Allow height to adjust to maintain aspect ratio */
+                max-height: 100vh; /* Limit the height in portrait mode */
+            }
+            pre{
+                font-size: calc(1vw * 0.9); /* Font size relative to viewport width */
+
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>My CV</h1>
-    <p>This is the CV page.</p>
+
+    <div class="header">
+        <pre>
+   █████████                                  ███                      ████                                █████   █████  ███   █████                       
+  ███░░░░░███                                ░░░                      ░░███                               ░░███   ░░███  ░░░   ░░███                       
+ ███     ░░░  █████ ████ ████████  ████████  ████   ██████  █████ ████ ░███  █████ ████ █████████████      ░███    ░███  ████  ███████    ██████    ██████ 
+░███         ░░███ ░███ ░░███░░███░░███░░███░░███  ███░░███░░███ ░███  ░███ ░░███ ░███ ░░███░░███░░███     ░███    ░███ ░░███ ░░░███░    ░░░░░███  ███░░███
+░███          ░███ ░███  ░███ ░░░  ░███ ░░░  ░███ ░███ ░░░  ░███ ░███  ░███  ░███ ░███  ░███ ░███ ░███     ░░███   ███   ░███   ░███      ███████ ░███████ 
+░░███     ███ ░███ ░███  ░███      ░███      ░███ ░███  ███ ░███ ░███  ░███  ░███ ░███  ░███ ░███ ░███      ░░░█████░    ░███   ░███ ███ ███░░███ ░███░░░  
+ ░░█████████  ░░████████ █████     █████     █████░░██████  ░░████████ █████ ░░████████ █████░███ █████       ░░███      █████  ░░█████ ░░████████░░██████ 
+   ░░░░░░░░░    ░░░░░░░░ ░░░░░     ░░░░░     ░░░░░  ░░░░░░    ░░░░░░░░ ░░░░░   ░░░░░░░░ ░░░░░ ░░░ ░░░░░         ░░░      ░░░░░    ░░░░░   ░░░░░░░░  ░░░░░░</pre>
+    </div>
+    <div class="cv">
+        <iframe src="cv/Samuel_Harwood_CV.pdf"></iframe>
+    </div>
 </body>
 </html>
