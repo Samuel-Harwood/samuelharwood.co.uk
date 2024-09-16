@@ -3,7 +3,14 @@
 document.addEventListener("DOMContentLoaded", () => {
     const terminalInput = document.getElementById("terminal-input");
     const output = document.getElementById("output");
-  
+    const invalidCommandResponses = [
+      "404 Page Not Found",
+      "Close, but no keyboard.",
+      "Try turning it off and on again.",
+      "You've earnt it, Type 7 for a secret!."
+    ];
+    let responseIndex = 0;
+
     // Function to handle the user's input
     function handleInput(input) {
       input = input.trim(); // Remove any extra whitespace
@@ -22,10 +29,17 @@ document.addEventListener("DOMContentLoaded", () => {
           window.location.href = "cv.html"; // Adjust this if you want a different behavior
 
           break;
+        case "7":
+          newOutput.textContent = "Just kidding :)";
+          output.appendChild(newOutput);
+          break;
         default:
 
-          newOutput.textContent = `Command not found: ${input}`;
-          output.appendChild(newOutput);
+        newOutput.textContent = invalidCommandResponses[responseIndex];
+        output.appendChild(newOutput);
+
+        // Increment the index, loop back to start if end of array is reached
+        responseIndex = (responseIndex + 1) % invalidCommandResponses.length;
           break;
       }
     }
