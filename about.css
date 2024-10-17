@@ -9,7 +9,6 @@ body {
     font-size: 1vw; 
     font-family: "PexicoMicro-Regular", Arial, sans-serif;
     background-color: #002936;
-    background-image: radial-gradient(#E85D75 2px, transparent 0);
     background-size: 60px 60px;
     background-position: 0px 0px
 }
@@ -33,7 +32,23 @@ body {
     cursor: pointer;
     text-decoration: none; 
 }
-
+.blob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+    height: 650px;
+    border-radius: 100%;
+    background-image: linear-gradient(#E85D75 10%, #E85D75);
+    filter: blur(250px);
+    transition: all 450ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    z-index: -1;
+}
 
 .homepage:active {
     box-shadow: none;

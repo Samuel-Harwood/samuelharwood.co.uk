@@ -13,12 +13,54 @@
             justify-content: flex-start; /* Align items from the top */
             align-items: center;
             background-color: #002936;
-            background-image: radial-gradient(#E85D75 2px, transparent 0);
             background-size: 60px 60px;
             background-position: 0px 0px;
+            font-family: "PexicoMicro-Regular", Arial, sans-serif;
             height: 100vh; /* Full viewport height */
             overflow: hidden; /* Prevent scrollbars */
         }
+        .blob {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 650px;
+            height: 650px;
+            border-radius: 100%;
+            background-image: linear-gradient(#E85D75 10%, #E85D75);
+            filter: blur(250px);
+            transition: all 450ms ease-out;
+            position: fixed;
+            pointer-events: none;
+            left: 0;
+            top: 0;
+            transform: translate(calc(-50% + 15px), -50%);
+            z-index: -1;
+        }
+
+        .homepage{
+            position: fixed;
+            display: flex;
+            top: 0;   
+            left: 0;   
+            margin-top: 2.5vw;
+            margin-left: 2vw;
+            /*Copyright - 2024 levxyca (Leticia 'levxyca') */
+            font-size: 1rem;
+            color: #c5d7ed7a;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 2px solid #c5d7ed7a;
+            background: #002936;
+            box-shadow: 3px 3px #c5d7ed7a;
+            cursor: pointer;
+            text-decoration: none; 
+        }
+        .homepage:active {
+            box-shadow: none;
+            transform: translate(3px, 3px);
+        }
+
         .header {
             width: 100%;
             text-align: center;
@@ -64,7 +106,8 @@
     </style>
 </head>
 <body>
-
+    <div class ="blob"></div>
+    <a href="index.html"  id="index-btn"><div class="homepage">samuelharwood.co.uk</div></a>
     <div class="header">
         <pre>
    █████████                                  ███                      ████                                █████   █████  ███   █████                       
@@ -79,5 +122,7 @@
     <div class="cv">
         <iframe src="cv/Samuel_Harwood_CV.pdf"></iframe>
     </div>
+    <script src="script.js"></script>
+
 </body>
 </html>

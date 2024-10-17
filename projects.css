@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-size: 1vw;
+    font-family: "PexicoMicro-Regular", Arial, sans-serif;
+    background-color: #002936;
+    background-size: 60px 60px;
+    background-position: 0px 0px;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.title-container {
+    color: #E85D75;
+    text-align: center;
+    margin-top: 20px; /* Add margin to push the title down a bit */
+}
+.blob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+    height: 650px;
+    border-radius: 100%;
+    background-image: linear-gradient(#E85D75 10%, #E85D75);
+    filter: blur(250px);
+    transition: all 450ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    z-index: -1;
+}
+.homepage{
+    position: fixed;
+    display: flex;
+    top: 0;   
+    left: 0;   
+    margin-top: 2.5vw;
+    margin-left: 2vw;
+    /*Copyright - 2024 levxyca (Leticia 'levxyca') */
+    font-size: 1rem;
+    color: #c5d7ed7a;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #c5d7ed7a;
+    background: #002936;
+    box-shadow: 3px 3px #c5d7ed7a;
+    cursor: pointer;
+    text-decoration: none; 
+}
+.homepage:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    justify-items: center; /* Center the items in each grid cell */
+    align-items: center; /* Vertically center content in grid */
+}
+
+/* Project Item Styling */
+.project-item {
+    margin: 25px;
+    display: flex;
+    justify-content: center; /* Center the individual card */
+    width: fit-content; /* Use only the width of the card */
+}
+
+
+
+
+
+
+.card {
+    box-sizing: border-box;
+    display: flex;
+    width: clamp(400px, 650px, 800px); /* Match the width of the card */
+    height: clamp(200px, 500px, 800px); /* Match the height of the card */
+    background-color: rgba(255, 255, 255, 1);
+    transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.content {
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.tech-stack-container {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    padding: 0.5rem;
+}
+
+.tech-stack {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 1rem;
+    gap: 1rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(17, 24, 39, 1);
+}
+
+
+.infos {
+    border-left: 1px solid rgba(17, 24, 39, 0.1);
+    padding: 1rem;
+}
+
+.title {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: rgba(17, 24, 39, 1);
+}
+
+.description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    color: rgba(55, 65, 81, 1);
+}
+
+.action {
+    display: block;
+    padding: 2rem 2rem;
+    text-align: center; 
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(17, 24, 39, 1);
+    transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.action.one{background-color:#E85D75;}
+.action.one:hover{background-color:#D35B6A;}
+.action.two{background-color:#70A288;}
+.action.two:hover{background-color:#598B76;}
+.action.three{background-color:#DAB785;}
+.action.three:hover{background-color:#C69B68;}
+.action.four{background-color:#476C9B;}
+.action.four:hover{background-color:#3B5B8A;}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    h1{
+        font-size: 5rem; /* Adjust font sizes */
+
+    }
+    .title {
+        font-size: 2rem; /* Adjust font sizes */
+    }
+
+    .description {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .action {
+        font-size: 0.8rem;
+        padding: 1.5rem;
+    }
+
+    .project-image, .card {
+        width: 90vw; /* Take almost full width of smaller screens */
+    }
+    .project-container {
+        grid-template-columns: 1fr; /* On smaller screens, make it 1 column */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1{
+        font-size: 5rem; 
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .action {
+        font-size: 0.7rem;
+        padding: 1rem;
+    }
+    .project-image, .card {
+        width: 80vw; 
+    }
+    .project-container {
+        grid-template-columns: 1fr; 
+    }
+
+}
+@media screen and (orientation: landscape) and (max-width: 480px) {
+    .project-container {
+        grid-template-columns: 1fr; 
+    }
+}
+
+    @media screen and (orientation: landscape) and (max-width: 768px) {
+        .project-container {
+            grid-template-columns: 1fr; 
+        }
+    }
