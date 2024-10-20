@@ -6,6 +6,8 @@
 body {
     display: flex;
     overflow: hidden;
+    font-family: "PexicoMicro-Regular", Arial, sans-serif;
+
 }
 
 section.pages {
@@ -15,6 +17,7 @@ section.pages {
     overflow: hidden auto;
     transform-origin: right top;
     transform: rotate(-90deg) translateY(-100vh);
+    background-color: #002936;
 }
 
 .block {
@@ -27,31 +30,50 @@ section.pages {
     width: 100vh;
     height: 50vw;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-container.two{
+
 }
 
 .box{
-    width: 150px;
-    height: 150px;
-    background-color: rgb(236, 215, 215);
-    transform: rotate(90deg) translateX(50%);
-    transform-origin: center;
+    width: 50vh;
+    height: 50vw;
 }
 
-.box.three{
-    width: 300px;
-    height: 300px;
-    align-items: flex-start;
+.box.two{
+    display: flex;              
+    justify-content: center;     
+    align-items: center;         
+    text-align: center;          
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 5rem;
+    text-wrap: nowrap;
+}
+
+blockquote {
+    transform: rotate(90deg); /* Rotate boxes to match the horizontal scroll */
+    border-left: 5px solid;
+    border-color: #E85D75;
+    margin-left: 0;
+    padding: 1rem 0 1rem 1rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(
+      35deg,
+      #E85D75,
+      hsl(160, 100%, 65%)
+    );
 }
 
 
-.box:nth-child(1){
-    background-color: red;
-}
-.box:nth-child(2){
-    background-color: green;
-}
+
 
 
 .pages::-webkit-scrollbar {
