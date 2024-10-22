@@ -99,7 +99,7 @@ pre.home {
     font-size: clamp(.5vw, 1vw, 3vw); 
     margin-top: 8.5vw;
     margin-right: 17.5vw; 
-
+    
 }
 
 blockquote {
@@ -123,19 +123,21 @@ h1 {
 
 .icons {
     display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    list-style-type: none; 
-      
+    flex-direction: row;
+    height: 500px;
+    width: 75px;
+    background-color: black;
+    list-style-type:none;
+    border-radius: 50px;
 }
 
 
 .icon-content {
-    margin:100px;
-    height: clamp(1rem, 2vw, 3vw);
-    width: clamp(1rem, 2vw, 3vw);
-    background-color: #E85D75;
+    width: 30px;
+    height: 30px;    
+    margin: auto;
+    align-items: flex-start;
+    background-color: #ffffff;
 }
 
 .filled {
