@@ -84,23 +84,29 @@ section.pages {
 
 }
 
-h1 {
-    font-size: 4vw;
-    text-wrap: nowrap;
-}
-
-pre{
-    font-size: 2vw; 
+pre {
+    position: absolute;
+    font-size: clamp(1vw, 1.5vw, 3vw); 
     color: #C5D7ED;
     white-space: nowrap;
-    
+    padding: 0; 
+    margin-top: 5vw;
+
+    margin-right: 7.5vw;
+}
+
+pre.home {
+    font-size: clamp(.5vw, 1vw, 3vw); 
+    margin-top: 8.5vw;
+    margin-right: 17.5vw; 
 
 }
 
 blockquote {
+    position: absolute; 
     border-left: 5px solid;
     border-color: #E85D75;
-    padding: 0rem 0rem 0rem 1rem;
+    padding: 0rem 2vw 0rem 1.5vw; 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(
@@ -108,6 +114,11 @@ blockquote {
       #E85D75,
       hsl(160, 100%, 65%)
     );
+}
+
+h1 {
+    font-size: clamp(2vw, 3vw, 6vw);
+    text-wrap: nowrap;
 }
 
 .icons {
@@ -122,8 +133,8 @@ blockquote {
 
 .icon-content {
     margin:100px;
-    height: 100px;
-    width: 100px;
+    height: clamp(1rem, 2vw, 3vw);
+    width: clamp(1rem, 2vw, 3vw);
     background-color: #E85D75;
 }
 
