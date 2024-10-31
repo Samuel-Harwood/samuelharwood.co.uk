@@ -1,8 +1,9 @@
 # [samuelharwood.co.uk](https://samuelharwood.co.uk)
-![Website Screenshot](https://github.com/user-attachments/assets/9349b5ca-b6bc-4ce6-a31b-8eeda7a4440d)
+![image](https://github.com/user-attachments/assets/f211d2fc-76ce-4de0-aa72-cacaafd8f571)
 
 
-Don't look too closely at the code, I'm no good at HTML or CSS
+
+Portfolio page, layout
 
 
 - **Home Page**: `index.html`
@@ -10,9 +11,9 @@ Don't look too closely at the code, I'm no good at HTML or CSS
 - **Projects**: `projects.html`
 - **Curriculum Vitae**: `cv.html`
 - **Scripts**: `script.js`
+- **Testing**: `testing.html`
 - **Styles**: `styles.css`, `about.css`
 - **Assets**: `images/`
-- **Documentation**: `README.md`
 
 
 ## Technologies Used
