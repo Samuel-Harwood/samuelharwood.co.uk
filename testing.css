@@ -4,7 +4,7 @@
 }
 
 html {
-    scroll-behavior: smooth;  /* Enable smooth scrolling */
+    scroll-behavior: smooth;  
 }
 
 body {
@@ -286,5 +286,22 @@ display: flex;
 
 .block:nth-child(3) {
     background: rgb(52, 180, 48);
+}
+
+
+
+.rectangle{
+    background: black;
+    width: 100px;
+    height: 50px;
+}
+
+
+.square{
+    
+}
+
+.text{
+
 }
 
