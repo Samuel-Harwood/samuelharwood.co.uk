@@ -61,7 +61,8 @@ section.pages {
 }
 
 .box-container.two{
-
+    position: relative;
+    transform: rotateY(90);
 }
 
 .box{
@@ -288,3 +289,28 @@ display: flex;
     background: rgb(52, 180, 48);
 }
 
+.rectangle{
+    position: absolute;
+    background: black;
+    width: 250px;
+    height: 75px;
+    border-radius: 25px;
+    
+}
+
+
+.square{
+    
+}
+
+.text{
+
+}
+
+#gravityImg {
+    position: absolute;
+    top: 50%;       /* Center vertically within container */
+    left: 0;        /* Start at the left of the container */
+    transform: translateY(-50%) rotate(90deg);  
+    width: 100px;   /* Adjust size as needed */
+}

@@ -84,3 +84,62 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.querySelector('.box-container.two');
+  const image = document.getElementById('gravityImg');
+
+  // Initial settings
+  let velocityX = 0;
+  let positionX = container.getBoundingClientRect().width - image.getBoundingClientRect().width; // Start from the right
+  let mouseForceX = 0;
+  let mouseForceY = 0;
+  const gravity = -0.6;         // Gravity strength pulling to the left
+  const bounceFactor = 0.7;     // Controls bounce intensity
+
+  function applyGravity() {
+    const containerRect = container.getBoundingClientRect();
+    const imageRect = image.getBoundingClientRect();
+
+    // Apply reversed horizontal gravity to velocity (moving leftward)
+    velocityX += gravity;
+    positionX += velocityX + mouseForceX;
+
+    // Constrain positionX to stay within container's width
+    positionX = Math.min(
+      Math.max(positionX, 0),
+      containerRect.width - imageRect.width
+    );
+
+    // Set image position relative to the container
+    image.style.left = `${positionX}px`;
+
+    // Left-boundary bounce within container
+    if (positionX <= 0) {
+      positionX = 0;
+      velocityX *= -bounceFactor; // Reverse velocity to simulate bounce
+    }
+
+    // Gradually reduce mouse force for a smooth effect
+    mouseForceX *= 0.95;
+    mouseForceY *= 0.95;
+
+    requestAnimationFrame(applyGravity);
+  }
+
+  // Detect cursor movement and apply repelling force within container
+  container.addEventListener('mousemove', (e) => {
+    const rect = image.getBoundingClientRect();
+    const dx = e.clientX - (rect.left + rect.width / 2);
+    const dy = e.clientY - (rect.top + rect.height / 2);
+    const distance = Math.sqrt(dx * dx + dy * dy);
+
+    if (distance < 150) { // Adjust sensitivity
+      const force = (150 - distance) / 150; // Increase force as cursor gets closer
+      mouseForceX += -force * (dx / distance) * 10; // Horizontal repelling force
+      mouseForceY += -force * (dy / distance) * 10; // Vertical repelling force
+    }
+  });
+
+  applyGravity();
+});
