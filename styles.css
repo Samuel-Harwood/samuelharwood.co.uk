@@ -89,23 +89,48 @@ section.pages {
 
 }
 
+
 pre {
     position: absolute;
     font-size: clamp(1vw, 1.5vw, 3vw); 
     color: #C5D7ED;
     white-space: nowrap;
     padding: 0; 
-    margin-top: 5vw;
+    margin-top: 10vw;
 
-    margin-right: 7.5vw;
+    margin-right: 5vw;
 }
 
 pre.home {
     font-size: clamp(.5vw, 1vw, 3vw); 
-    margin-top: 8.5vw;
-    margin-right: 17.5vw; 
+    margin-top: 13.5vw;
+    margin-right: 15vw; 
     
 }
+
+blockquote {
+    position: absolute; 
+    border-left: 5px solid;
+    border-color: #E85D75;
+    padding: 0rem 2vw 0rem 1.5vw; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(
+      35deg,
+      #E85D75,
+      hsl(160, 100%, 65%)
+    );
+    margin-top: 5vw;
+    margin-left: 2.5vw;
+
+}
+
+h1 {
+    font-size: clamp(2vw, 3vw, 6vw);
+    text-wrap: nowrap;
+
+}
+
 
 header{
     width: 100vw;
@@ -194,33 +219,10 @@ button:hover{
 }
 
 
-blockquote {
-    position: absolute; 
-    border-left: 5px solid;
-    border-color: #E85D75;
-    padding: 0rem 2vw 0rem 1.5vw; 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(
-      35deg,
-      #E85D75,
-      hsl(160, 100%, 65%)
-    );
-}
 
-h1 {
-    font-size: clamp(2vw, 3vw, 6vw);
-    text-wrap: nowrap;
-}
 
 .icons {
-    display: flex;
-    flex-direction: row;
-    height: 500px;
-    width: 75px;
-    background-color: black;
-    list-style-type:none;
-    border-radius: 50px;
+   
 }
 
 
@@ -228,7 +230,7 @@ h1 {
     width: 30px;
     height: 30px;    
     margin: auto;
-    align-items: flex-start;
+    list-style: none;
     background-color: #ffffff;
 }
 
@@ -307,10 +309,14 @@ display: flex;
 
 }
 
-#gravityImg {
+
+.break-line{
     position: absolute;
-    top: 50%;       /* Center vertically within container */
-    left: 0;        /* Start at the left of the container */
-    transform: translateY(-50%) rotate(90deg);  
-    width: 100px;   /* Adjust size as needed */
+    height: 75vh;
+    width: 0.1vw;
+    background-color: yellow;
+    transform: rotate(90deg); 
+    margin-right: 5vh; 
+    margin-bottom: 55vw;
+
 }
