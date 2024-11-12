@@ -85,12 +85,13 @@ section.pages {
     align-items: center;         
     text-align: center; 
     flex-direction: column;
-    transform: rotate(90deg); 
 
 }
 
 
 pre {
+    transform: rotate(90deg); 
+
     position: absolute;
     font-size: clamp(1vw, 1.5vw, 3vw); 
     color: #C5D7ED;
@@ -98,17 +99,19 @@ pre {
     padding: 0; 
     margin-top: 10vw;
 
-    margin-right: 5vw;
+    margin-right: 11vw;
 }
 
 pre.home {
     font-size: clamp(.5vw, 1vw, 3vw); 
-    margin-top: 13.5vw;
+    margin-top: 20vw;
     margin-right: 15vw; 
     
 }
 
 blockquote {
+    transform: rotate(90deg); 
+
     position: absolute; 
     border-left: 5px solid;
     border-color: #E85D75;
@@ -120,8 +123,8 @@ blockquote {
       #E85D75,
       hsl(160, 100%, 65%)
     );
-    margin-top: 5vw;
-    margin-left: 2.5vw;
+    margin-top: 3vw;
+    margin-right: 5vw;
 
 }
 
@@ -134,7 +137,7 @@ h1 {
 
 header{
     width: 100vw;
-    height: 5vh;
+    height: 6vh;
     min-height: 50px;
     display: flex;
     justify-content:space-between;
@@ -156,11 +159,15 @@ li, a, button{
 .nav-links li a{
     transition: all 0.3s ease 0s;
     padding: 5px 15px;
-    border: 3px solid #000000;
+    border: 2px solid #000000;
     border-radius: 100px;
+    
 }
+
+
+
 .nav-links li:nth-child(1) a:hover {
-    background-color: #29a7ce; 
+    background-color: #20bbeb; 
 }
 
 .nav-links li:nth-child(2) a:hover {
@@ -181,7 +188,7 @@ li, a, button{
     display: flex;                
     align-items: center;           
     padding: 0;
-
+    margin-left: -150px;
 }
 button{
     padding: 9px 25px;
@@ -199,7 +206,7 @@ button:hover{
 
 
 .homepage {
-  
+    display: flex;                
     /*2024 levxyca (Leticia 'levxyca') */
     font-size: 1rem;
     color: #000000;
@@ -291,32 +298,39 @@ display: flex;
     background: rgb(52, 180, 48);
 }
 
-.rectangle{
-    position: absolute;
-    background: black;
-    width: 250px;
-    height: 75px;
-    border-radius: 25px;
-    
-}
-
-
-.square{
-    
-}
-
-.text{
-
-}
 
 
 .break-line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     height: 75vh;
     width: 0.1vw;
     background-color: yellow;
-    transform: rotate(90deg); 
-    margin-right: 5vh; 
-    margin-bottom: 55vw;
+    transform: translate(-50%, -50%) rotate(90deg);
+    top: 50%;
+    left: 50%;
+}
 
+.skill{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 250px;
+    width: 75px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+}
+
+.skillbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #695151;
+    border-radius: 10px;
 }
