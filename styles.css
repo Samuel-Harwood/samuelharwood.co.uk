@@ -307,34 +307,65 @@ button:hover{
     left: 50%;
 }
 
-.skill {
-    transform: rotate(90deg);
+.box-container.two {
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center;
+    height: 50vw;
+    padding-right: 50px; /* Add some spacing from the edge */
+    background-color: #002936;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr);   /* 2 rows */
+    gap: 20px; /* Add spacing between items */
+    transform: rotate(90deg); /* Maintain the rotated structure */
+  }
+  
+  .skill {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align content to the start (left) */
+    justify-content: flex-start; 
     position: relative;
-    height: 75px; 
-    width: 250px; 
+    height: 60px;
+    width: 200px;
     background-color: #1a1a1a;
     border-radius: 10px;
-    padding: 10px;
+    padding: 6px;
     gap: 15px;
-    flex-direction: row;
-}
+  }
+  
+
 
 .skillbox {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     background-color: #154862;
     border-radius: 10px;
 }
 
+
+.skillbox.git{
+   background-color: #962e1b;
+}
+
+.skillbox.sql{
+    background-color: #38b6ff;
+}
+
 .skillbox img {
-    width: 100%; /* Make the image fill the skillbox */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 90%;
+    height: auto; 
+}
+
+.skill.sql .skillbox img, .skill.c .skillbox img{
+    max-width: 85%;
+    height:auto;
 }
 
 .skill-text {
@@ -347,13 +378,15 @@ button:hover{
 }
 
 .skill-text h3 {
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: 500;
     margin: 0;
     padding-bottom: 5px;
 }
 
 .skill-text h4 {
-    font-size: 10px;
+    font-size: 9px;
+    font-weight: 400;
     margin: 0;
     opacity: 0.8; /* Optional for slightly faded text */
 }
