@@ -195,6 +195,8 @@ li, a, button{
     padding: 0;
     margin-left: -7vw;
 }
+
+
 button{
     background-color: rgb(0, 169, 161);
     padding: 0.25vw 0.75vw; 
@@ -298,47 +300,47 @@ button:hover{
 
 
 
-.break-line{
+.break-line {
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    height: 75vh;
-    width: 0.1vw;
+    width: 75vh; 
+    height: 0.05vw; 
     background-color: yellow;
-    transform: translate(-50%, -50%) rotate(90deg);
-    top: 50%;
-    left: 50%;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%) rotate(0deg); 
+    z-index: 1; 
 }
 
-.box-container.two {
+.box-container.two{
     display: flex;
-    justify-content: center; 
     align-items: center;
-    background-color: #002936;
-    position: relative;
-    right: 10vh; 
-  }
-  
-  .skills-grid {
+    padding-left: 100px;
+}
+
+.skills-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    grid-template-rows: repeat(3, 1fr);  
-    gap: 2.5vh; 
-    transform: rotate(90deg);
-  }
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 3vh; 
+    justify-items: center;
+    transform: rotate(90deg); 
+}
+  
   
   .skill {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     position: relative;
-    height: 5.5vh; 
-    width: 9.5vw; 
+    height: 6vh; 
+    width: 10.5vw; 
     background-color: #1a1a1a;
-    border-radius: 1vh; 
-    padding: 0.5vh;
-    gap: 0.5vw; 
+    border-radius: 20px; 
+    padding: 1vh;
+    gap: 1vw; 
 
 }
   
@@ -348,8 +350,8 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 4vh;
-    width: 4vh;
+    height: 4.5vh;
+    width: 4.5vh;
     background-color: #154862;
     border-radius: 10px;
 }
@@ -378,16 +380,17 @@ button:hover{
 }
 
 .skill-text h3 {
-    font-size: 0.75vw;
+    font-size: clamp(1rem, 1vw, 2rem);
     font-weight: 500;
     margin: 0;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 .skill-text h4 {
-    font-size: 0.5vw;
+    font-size: clamp(0.5rem, 0.5vw, 2rem);
     font-weight: 500;
     margin: 0;
     opacity: 0.8; 
     text-wrap: nowrap;
 }
+
