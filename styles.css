@@ -60,10 +60,6 @@ section.pages {
     background-color: #002936;
 }
 
-.box-container.two{
-    position: relative;
-    transform: rotateY(90);
-}
 
 .box{
     width: 50vh;
@@ -78,8 +74,7 @@ section.pages {
 }
 
 .box.two{
-    width: 50vh;
-    height: 50vw;
+
     display: flex;              
     justify-content: center;     
     align-items: center;         
@@ -315,28 +310,59 @@ button:hover{
 }
 
 .box-container.two{
+    width: 100vh;
+    height: 50vw;
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding-left: 100px;
+}
+
+
+.box.four{
+    width: 50vh;
+    height: 50vw;
+    margin: 0;
+    padding:0;
+    display: flex;              
+    justify-content: center;     
+    align-items: center;         
+    text-align: center; 
+    flex-direction: column;
+
+}
+
+.box.three{
+    width: 50vh;
+    height: 50vw;
+    margin: 0;
+    padding: 0;
+    display: flex;              
+    justify-content: center;     
+    align-items: center;         
+    text-align: center; 
+    flex-direction: column;
+
 }
 
 .skills-grid {
+    transform: rotate(90deg); 
     display: grid;
+    position: absolute;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr); 
     gap: 3vh; 
     justify-items: center;
-    transform: rotate(90deg); 
+    margin-left: 10vw;
 }
   
   
-  .skill {
+.skill {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     position: relative;
-    height: 6vh; 
-    width: 10.5vw; 
+    height: clamp(6vh, 6vh, 6vh); 
+    width: clamp(10.5vw, 10.5vw, 10.5vw); 
     background-color: #1a1a1a;
     border-radius: 20px; 
     padding: 1vh;
@@ -346,28 +372,17 @@ button:hover{
   
 
 
+
 .skillbox {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 4.5vh;
-    width: 4.5vh;
+    height: clamp(3vh, 4.5vh, 6vh);
+    width: clamp(3vh, 4.5vh, 6vh);
     background-color: #154862;
     border-radius: 10px;
+
 }
-
-.skillbox.python { background-image: linear-gradient(to right, #af8600, #3771a3);}
-.skillbox.c {background-image: linear-gradient(to right, #004482, #cecece);}
-.skillbox.git {background-image: linear-gradient(to right, #4d1106, #f05033);}
-.skillbox.sql {background-image: linear-gradient(to right, #e4a132, #106e92);}
-.skillbox.linux { background-image: linear-gradient(to right, #383838, #5e5e5e);}
-.skillbox.azure{background-image: linear-gradient(to right,  #32b0ea, #0d559d);}
-.skillbox.linux{background-image: linear-gradient(to right, #848484, #f8d30e);}
-
-.skillbox img {max-width: 85%;}
-.skill.git .skillbox img{max-width: 95%;}
-.skill.linux .skillbox img{max-width: 80%;}
-
 
 .skill-text {
     display: flex;
@@ -380,17 +395,45 @@ button:hover{
 }
 
 .skill-text h3 {
-    font-size: clamp(1rem, 1vw, 2rem);
     font-weight: 500;
-    margin: 0;
-    padding-bottom: 10px;
+    padding: 0;
+    text-wrap: nowrap;
+    white-space: nowrap;
+    position: absolute;
+    font-size: clamp(0.5vw, 1vw, 2vw); 
+    margin-bottom: 1vw;
 }
 
 .skill-text h4 {
-    font-size: clamp(0.5rem, 0.5vw, 2rem);
+    font-size: clamp(0.1vw, 0.5vw, 1vw);
     font-weight: 500;
-    margin: 0;
+    padding: 0;
+    margin-top: 1.5vw;
     opacity: 0.8; 
     text-wrap: nowrap;
+    white-space: nowrap;
+    position: absolute;
+
 }
+
+
+
+
+
+
+
+
+
+.skillbox.python { background-image: linear-gradient(to right, #af8600, #3771a3);}
+.skillbox.c {background-image: linear-gradient(to right, #004482, #cecece);}
+.skillbox.git {background-image: linear-gradient(to right, #4d1106, #f05033);}
+.skillbox.sql {background-image: linear-gradient(to right, #e4a132, #106e92);}
+.skillbox.linux { background-image: linear-gradient(to right, #383838, #5e5e5e);}
+.skillbox.azure{background-image: linear-gradient(to right,  #32b0ea, #0d559d);}
+.skillbox.linux{background-image: linear-gradient(to right, #848484, #f8d30e);}
+
+.skillbox img {max-width: 85%;     object-fit: contain;}
+.skill.git .skillbox img{max-width: 95%;}
+.skill.linux .skillbox img{max-width: 80%;}
+
 
