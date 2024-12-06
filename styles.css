@@ -132,7 +132,7 @@ h1 {
 
 header{
     width: 100vw;
-    height: 6vh;
+    height: 4vw;
     min-height: 50px;
     display: flex;
     justify-content:space-between;
@@ -146,7 +146,7 @@ header{
 }
 
 li, a, button{
-    font-size: 0.75vw;
+    font-size: 1vw;
     color: #000000;
     text-decoration: none;
     text-transform: uppercase;
@@ -155,7 +155,7 @@ li, a, button{
 
 .nav-links li a, .homepage, button {
     display: inline-block; /* Allow padding and box-shadow to apply correctly */
-    font-size: 0.75vw; 
+    font-size: 1vw; 
     color: #000000; 
     text-decoration: none;
     text-transform: uppercase;
@@ -344,6 +344,11 @@ button:hover{
 
 }
 
+.box.three h1{
+    color:white;
+    transform: rotate(90deg);
+}
+
 .skills-grid {
     transform: rotate(90deg); 
     display: grid;
@@ -352,7 +357,8 @@ button:hover{
     grid-template-rows: repeat(3, 1fr); 
     gap: 3vh; 
     justify-items: center;
-    margin-left: 10vw;
+    margin-left: 12vw;
+    margin-bottom: 3vw;
 }
   
   
@@ -361,10 +367,10 @@ button:hover{
     align-items: center;
     justify-content: flex-start;
     position: relative;
-    height: clamp(6vh, 6vh, 6vh); 
-    width: clamp(10.5vw, 10.5vw, 10.5vw); 
+    height: clamp(6vh, 7vh, 10vh); 
+    width: clamp(10.5vw, 11.5vw, 11.5vw); 
     background-color: #1a1a1a;
-    border-radius: 20px; 
+    border-radius: 10px; 
     padding: 1vh;
     gap: 1vw; 
 
@@ -405,7 +411,7 @@ button:hover{
 }
 
 .skill-text h4 {
-    font-size: clamp(0.1vw, 0.5vw, 1vw);
+    font-size: clamp(0.1vw, 0.6vw, 1vw);
     font-weight: 500;
     padding: 0;
     margin-top: 1.5vw;
