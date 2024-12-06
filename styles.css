@@ -98,8 +98,8 @@ pre {
 }
 
 pre.home {
-    font-size: clamp(.5vw, 1vw, 3vw); 
-    margin-top: 20vw;
+    font-size: clamp(.5vw, 1.25vw, 3vw); 
+    margin-top: 17vw;
     margin-right: 15vw; 
     
 }
@@ -152,10 +152,12 @@ li, a, button{
     text-transform: uppercase;
 }
 
+.homepage{
+    font-size: 1vw; 
+}
 
 .nav-links li a, .homepage, button {
     display: inline-block; /* Allow padding and box-shadow to apply correctly */
-    font-size: 1vw; 
     color: #000000; 
     text-decoration: none;
     text-transform: uppercase;
@@ -293,7 +295,17 @@ button:hover{
     background: rgb(52, 180, 48);
 }
 
-
+.images{
+    transform: rotate(90deg);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    gap:1vw;
+    margin-left: 15vw;
+    margin-top: 20vw;
+    
+}
 
 .break-line {
     display: flex;
