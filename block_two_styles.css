@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;  
+}
+
+body {
+    display: flex;
+    overflow: hidden;
+    font-family: "PexicoMicro-Regular", Arial, sans-serif;
+
+}
+
+

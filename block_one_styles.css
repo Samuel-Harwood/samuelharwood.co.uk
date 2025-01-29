@@ -13,23 +13,8 @@ body {
     font-family: "PexicoMicro-Regular", Arial, sans-serif;
 
 }
-.blob {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 650px;
-    height: 650px;
-    border-radius: 100%;
-    background-image: linear-gradient(#E85D75 10%, #E85D75);
-    filter: blur(250px);
-    transition: all 450ms ease-out;
-    position: fixed;
-    pointer-events: none;
-    left: 0;
-    top: 0;
-    transform: translate(calc(-50% + 15px), -50%);
-    z-index: 0;
-}
+
+
 
 
 
@@ -66,32 +51,18 @@ section.pages {
 .box{
     width: 50vh;
     height: 50vw;
-}
-
-.box.one{
     display: flex;
     flex-direction: column; 
     justify-content: center;
     align-items: center; 
-    position: relative; /* Add this */
-    
-
+    position: relative;
 }
 
-.box.two{
 
-    display: flex;              
-    justify-content: center;     
-    align-items: center;         
-    text-align: center; 
-    flex-direction: column;
-
-}
 
 
 pre {
     transform: rotate(90deg); 
-
     position: absolute;
     font-size: clamp(1vw, 1.5vw, 3vw); 
     color: #C5D7ED;
@@ -107,6 +78,10 @@ pre.home {
     margin-top: 17vw;
     margin-right: 15vw; 
     
+}
+
+.box.one{
+    margin: auto;
 }
 
 .box.two blockquote {
@@ -343,7 +318,7 @@ button:hover{
 
 
 .box.four{
-    width: 50vh;
+    width: 60vh;
     height: 50vw;
     margin: 0;
     padding:0;
@@ -356,7 +331,7 @@ button:hover{
 }
 
 .box.three{
-    width: 50vh;
+    width: 40vh;
     height: 50vw;
     margin: 0;
     padding-right: 10vw;
@@ -384,7 +359,7 @@ button:hover{
       
     );
     margin-bottom: 11vw;
-    margin-left: 5vw;
+    margin-right: 1vw;
  
 }
 
@@ -407,8 +382,9 @@ button:hover{
     grid-template-rows: repeat(3, 1fr); 
     gap: 3vh; 
     justify-items: center;
-    margin-left: 22vw;
+    margin-left: 10vw;
     margin-bottom: 3vw;
+    
 }
   
   
@@ -493,3 +469,21 @@ button:hover{
 .skill.linux .skillbox img{max-width: 80%;}
 
 
+
+:root {
+  --primary-color: #002936;
+  --accent-color: #E85D75;
+  --text-color: #C5D7ED;
+  --gradient-start: hsl(160, 100%, 65%);
+  --gradient-end: #E85D75;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
