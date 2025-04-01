@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;  
+}
+
+body {
+    display: flex;
+    overflow: hidden;
+    font-family: "PexicoMicro-Regular", Arial, sans-serif;
+
+}
+
+.section-two{
+    width: 100vh;
+    height: 50vw;
+    display: flex;
+
+}
+
+.section-two-ascii {
+    width: 50vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.section-two-ascii pre {
+    font-size: 1vw;
+    transform-origin: center;
+    white-space: pre;
+    font-family: monospace;
+    position: absolute;
+}
