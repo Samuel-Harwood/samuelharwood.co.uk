@@ -11,17 +11,16 @@ body {
     display: flex;
     overflow: hidden;
     font-family: "PexicoMicro-Regular", Arial, sans-serif;
-
 }
 
-.block.two{
+.block.three{
     display: flex;
     flex-wrap: wrap;
     align-content: stretch;
   justify-content: center;
 }
 
-.section-two{
+.section-three{
   width: 50%;
   height: 50%;
   display: flex;
@@ -29,20 +28,4 @@ body {
   justify-content: center;
   position: relative;
   overflow: hidden; 
-}
-
-.section-two-ascii {
-
-}
-
-.section-two.text{
-    background-color: aliceblue;
-}
-
-.section-two pre {
-    font-size: 1vw;
-    transform-origin: center;
-    white-space: pre;
-    font-family: monospace;
-    position: absolute;
 }
