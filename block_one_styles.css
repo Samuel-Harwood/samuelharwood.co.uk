@@ -15,12 +15,6 @@ body {
 }
 
 
-
-
-
-
-
-
 section.pages {
     height: 100vw;
     width: 100vh;
@@ -43,7 +37,7 @@ section.pages {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #002936;
+    background-color: #09546b;
     
 }
 
@@ -61,21 +55,23 @@ section.pages {
 
 
 
-pre {
+pre{
     transform: rotate(90deg); 
     position: absolute;
     font-size: clamp(1vw, 1.5vw, 3vw); 
     color: #C5D7ED;
     white-space: nowrap;
     padding: 0; 
-    margin-top: 10vw;
+}
 
+pre.job {
+    margin-top: 5vw;
     margin-right: 11vw;
 }
 
 pre.home {
     font-size: clamp(.5vw, 1.25vw, 3vw); 
-    margin-top: 17vw;
+    margin-top: 14vw;
     margin-right: 15vw; 
     
 }
